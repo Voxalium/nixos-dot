@@ -1,0 +1,70 @@
+* {
+  font-family: FiraCode;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  font-weight: bold;
+}
+window#waybar {
+  background: #101010;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  opacity: 0.95;
+}
+
+window#waybar:hover {
+  transition: none;
+  opacity: 0.5;
+  border: none;
+}
+#taskbar {
+  background: #242424;
+  margin-left: 6px;
+  border-radius: 6px;
+}
+#taskbar button {
+  border: none;
+  box-shadow: none;
+  padding: 0 5px;
+}
+#taskbar button.active {
+  border-bottom: 2px solid #ff8820;
+  color: white;
+}
+#taskbar button:hover {
+  transition: none;
+  background: none;
+  border: none;
+}
+
+#window {
+  color: white;
+}
+
+#workspaces button {
+  color: #505050;
+  border: none;
+  box-shadow: none;
+}
+#workspaces button.active {
+  border-bottom: 2px solid #ff8820;
+  color: white;
+}
+#workspaces button:hover {
+  background: none;
+}
+
+#clock,
+#pulseaudio,
+#network,
+#cpu,
+#memory,
+#temperature,
+#pulseaudio,
+#clock,
+#tray {
+  color: #ff8820;
+  padding: 0 5px;
+}
+modules-right {
+  background: #242424;
+}
