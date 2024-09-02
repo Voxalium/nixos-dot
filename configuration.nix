@@ -61,13 +61,15 @@
 			};
 		};
 		xserver = {
+      enable = true;
 			videoDrivers = ["nvidia"];
-			enable = true;
 			xkb.layout = "fr";
+
+      windowManager.awesome.enable = true;
 
 			displayManager.gdm = {
 				enable = true;
-				wayland = true;
+        #      wayland = true;
 			};
 		};
 
@@ -92,25 +94,25 @@
     portal = {
       enable = true;
       extraPortals = with pkgs;[
-        xdg-desktop-portal-wlr
         xdg-desktop-portal-gtk
+        #xdg-desktop-portal-wlr
       ];
     };
   };
 	
 	environment = {
 		sessionVariables = {
-			NIXOS_OZONE_WL = "1";
-			WLR_NO_HARDWARE_CURSORS = "1";
-			XDG_CURRENT_DESKTOP = "Hyprland";
-			XDG_SESSION_TYPE = "wayland";
-			XDG_SESSION_DESKTOP = "Hyprland";
 			GBM_BACKEND = "nvidia-drm";
 			__GLX_VENDOR_LIBRARY_NAME = "nvidia";
 			LIBVA_DRIVER_NAME = "nvidia";
 			__GL_GSYNC_ALLOWED = "1";
 			__GL_VRR_ALLOWED = "0";
-			WLR_DRM_NO_ATOMIC = "1";
+      /* NIXOS_OZONE_WL = "1";
+      WLR_NO_HARDWARE_CURSORS = "1";
+      XDG_CURRENT_DESKTOP = "Hyprland";
+      XDG_SESSION_TYPE = "wayland";
+      XDG_SESSION_DESKTOP = "Hyprland";
+      WLR_DRM_NO_ATOMIC = "1"; */
 		};
 	};
 
@@ -126,12 +128,13 @@
 	];
 
 	programs = {
-		hyprland = { 
-			enable = true;
-			xwayland.enable = true;
-		};
 		nix-ld.enable = true;
     zsh.enable = true;
+
+		/* hyprland = { 
+			enable = true;
+      xwayland.enable = true;
+		}; */
 	};
 
 	nix.settings.experimental-features =["nix-command" "flakes"];

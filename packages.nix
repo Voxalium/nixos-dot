@@ -23,7 +23,10 @@
       neofetch
       neovim
       kitty
+      xdg-user-dirs
   #GUI
+      polkit_gnome
+      flameshot
       xfce.thunar
       pavucontrol
       helvum
@@ -31,5 +34,10 @@
       thunderbird
       mpv
       discord
+  #WM
+      bspwm
+  #NODE
+      nodePackages."live-server"
   ];
+  
 }

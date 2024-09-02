@@ -6,7 +6,6 @@ let
         ls="ls --color=auto";
         la="ls -la --color=auto";
         neoconf="nvim ~/.config/nvim/init.lua";
-        hyprconf="nvim ~/.config/hypr/hyprland.conf";
         nixconf="nvim ~/.dotfiles/configuration.nix";
         homeconf="nvim ~/.dotfiles/home.nix";
         nrs="sudo nixos-rebuild switch --flake ~/.dotfiles/";

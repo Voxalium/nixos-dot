@@ -3,10 +3,11 @@
   imports = [
   ./app/sh.nix
   ./app/kitty.nix
-  ./app/hyprland/hyprland.nix
+  /* ./app/hyprland/hyprland.nix
   ./app/hyprland/hyprpaper.nix
-  ./app/waybar/waybar.nix
+  ./app/waybar/waybar.nix */
   ./app/zsh/zsh.nix
+  ./app/awesome/awesome.nix
   ];
 
   home = {

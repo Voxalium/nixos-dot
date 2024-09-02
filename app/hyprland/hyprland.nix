@@ -1,8 +1,6 @@
-{config, pkgs, lib, ...}:
+{config, pkgs,...}:
 {
   home.packages = with pkgs;[
-      polkit_gnome
-      xdg-user-dirs
       xdg-desktop-portal-hyprland
       waybar
       hyprpaper
