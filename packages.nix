@@ -20,10 +20,12 @@
       luajitPackages.luarocks-nix
       lua
       python3
+      typescript
       neofetch
       neovim
       kitty
       xdg-user-dirs
+      sqlite
   #GUI
       polkit_gnome
       flameshot
@@ -38,6 +40,7 @@
       bspwm
   #NODE
       nodePackages."live-server"
+      nodePackages."nodemon"
   ];
   
 }
