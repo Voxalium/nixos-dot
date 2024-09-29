@@ -84,7 +84,7 @@
 
 	users.users.voxa = {
 		isNormalUser = true;
-		extraGroups = [ "wheel" "networkmanager" "input" ]; 
+		extraGroups = [ "wheel" "networkmanager" "input" "libvirtd" ]; 
     shell = pkgs.zsh;
 	};
 
@@ -137,6 +137,9 @@
       xwayland.enable = true;
 		}; */
 	};
+
+  virtualisation.libvirtd.enable = true;
+  programs.virt-manager.enable = true;
 
 	nix.settings.experimental-features =["nix-command" "flakes"];
 	system.stateVersion = "24.05"; 

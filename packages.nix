@@ -36,8 +36,6 @@
       thunderbird
       mpv
       discord
-  #WM
-      bspwm
   #NODE
       nodePackages."live-server"
       nodePackages."nodemon"
